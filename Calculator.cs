@@ -15,23 +15,42 @@ namespace Calculator{
 			Console.writeLine("Masukkanpilihan menu : ");
 			pil = Convert.ToInt32(Console.ReadLine());
 			
-			Console.writeLine("Masukkan nilai A : ");
-			a = Convert.ToInt32(Console.ReadLine());
-			
-			Console.writeLine("Masukkan nilai B : ");
-			b = Convert.ToInt32(Console.ReadLine());
 			
 			if(pil == 1){
+				Console.writeLine("Masukkan nilai A : ");
+			    a = Convert.ToInt32(Console.ReadLine());
+			
+			    Console.writeLine("Masukkan nilai B : ");
+			    b = Convert.ToInt32(Console.ReadLine());
 				Console.writeLine("Hasil Penambahan: {0} + {1} = {2}", a,b, Penambahan(a,b));
+				
 			}
-			if(pil == 2){
+			else if(pil == 2){
+				Console.writeLine("Masukkan nilai A : ");
+			    a = Convert.ToInt32(Console.ReadLine());
+			
+			    Console.writeLine("Masukkan nilai B : ");
+			    b = Convert.ToInt32(Console.ReadLine());
 			    Console.writeLine("Hasil Pengurangan: {0} - {1} = {2}", a,b, Pengurangan(a,b));
 			}
-			if(pil == 3){
+			else if(pil == 3){
+				Console.writeLine("Masukkan nilai A : ");
+			    a = Convert.ToInt32(Console.ReadLine());
+			
+			    Console.writeLine("Masukkan nilai B : ");
+			    b = Convert.ToInt32(Console.ReadLine());
 			    Console.writeLine("Hasil Pengurangan: {0} * {1} = {2}", a,b, Perkalian(a,b));
 			}
-			if(pil == 4){
+			else if(pil == 4){
+				Console.writeLine("Masukkan nilai A : ");
+			    a = Convert.ToInt32(Console.ReadLine());
+			
+			    Console.writeLine("Masukkan nilai B : ");
+			    b = Convert.ToInt32(Console.ReadLine());
 			    Console.writeLine("Hasil Pengurangan: {0} / {1} = {2}", a,b, Pembagian(a,b));
+			}
+			else{
+				Console.WriteLine("Maaf Pilihan yang anda inputkan tidak tersedia");
 			}
 		}
 		
